@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(117, 156, 169);
+}
+
+.box{
+    background-color: rgb(45, 76, 91);
+    font-style: italic;
+    width: 15%;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1%;
+    margin: 2%;
+    text-transform: capitalize;
+    border-radius: 10%;
+    display: inline-block;
+
+}
+.navbar{
+    display: grid;
+    padding-top: 1%;
+    grid-template-columns: 1fr 13fr;
+    
+}
+
+button{
+   
+    background-color: rgb(45, 76, 91);;
+    color: white;
+    width: 100px;
+    font-size: 0.9rem;
+}
+.input{
+    background-color: white;
+}
+.form1{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    padding: 3% 3%;
+}

@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+{% endblock %}
+{% block content %}
+
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form1">
+        <div>
+            {{ form.name }}
+        </div>
+        <div>
+            <button type="submit" class="btn">Add City</button>
+        </div>
+        </div>
+    </form>
+</div>
+
+{% for city_weather in data %}
+<div class="box">
+<img src="https://openweathermap.org/img/w/{{  city_weather.icon  }}.png" width="100px">
+<p>City :{{city_weather.city}}</p>
+<p>Temperature :{{city_weather.temperature}}</p>
+<p>Description :{{city_weather.description}}</p>
+</div>
+{% endfor %}
+{% endblock content %}
