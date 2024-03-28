@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #434040;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    margin-right: 10px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Align logo and h1 to the left */
+.navbar img,
+.navbar h1 {
+    margin-right: auto; /* Pushes the logo and h1 to the left */
+}
+
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #434040;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form group styles with margin */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Add margin on both sides */
+}
+
+/* Input box styles */
+.form-control {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid#434040;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #434040;
+    color: white;
+    border: 1px solid #434040;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: -1px;
+}
+
+.btn:hover {
+    background-color: #5d5959;
+    border-color: #434040;
+}
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Maximum width of the container */
+}
+
+/* Box styles */
+.box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px; /* Width of each box */
+}
+
+/* Capitalize city and description */
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* Delete button style */
+.btn-delete {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Capitalize city and description */
+.capitalize {
+    text-transform: capitalize;
+}

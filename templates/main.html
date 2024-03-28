@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    {% include 'nav.html' %}
+    <nav class="navbar">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" width="80px" />
+        <h1>WeatherToday!</h1>
+
+    </nav>
     {% block content %}
    
     {% endblock content %}

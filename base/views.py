@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import City
 import requests
 from .forms import CityForm
@@ -27,3 +27,10 @@ def index(request):
 
     context={'data': data,'form':form}
     return render(request,'base/index.html',context)
+
+
+def delete_city(request):
+    if request.method == 'POST':
+        city_name = request.POST.get('city_name')
+        City.objects.filter(name=city_name).delete()
+    return redirect('home') 
